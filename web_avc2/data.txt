@@ -1,0 +1,236 @@
+['IN-AN', 'Andaman and Nicobar Islands', 780],
+['IN-AP', 'Andhra Pradesh', 640],
+['IN-AR', 'Arunachal Pradesh', 780],
+['IN-AS', 'Assam', 640],
+['IN-BR', 'Bihar', 780],
+['IN-CH', 'Maharashtra', 640],
+['IN-CG', 'Uttar Pradesh', 780],
+['IN-DH', 'Maharashtra', 640],
+['IN-DL', 'Uttar Pradesh', 780],
+['IN-GA', 'Maharashtra', 640],
+['IN-GJ', 'Uttar Pradesh', 780],
+['IN-HR', 'Maharashtra', 640],
+['IN-HP', 'Uttar Pradesh', 780],
+['IN-JK', 'Maharashtra', 640],
+['IN-JH', 'Uttar Pradesh', 780],
+['IN-KA', 'Maharashtra', 640],
+['IN-KL', 'Uttar Pradesh', 780],
+['IN-LA', 'Maharashtra', 640],
+['IN-LD', 'Uttar Pradesh', 780],
+['IN-MP', 'Maharashtra', 640],
+['IN-MH', 'Uttar Pradesh', 780],
+['IN-MN', 'Maharashtra', 640],
+['IN-ML', 'Uttar Pradesh', 780],
+['IN-MZ', 'Maharashtra', 640],
+['IN-NL', 'Uttar Pradesh', 780],
+['IN-OD', 'Maharashtra', 640],
+['IN-PY', 'Uttar Pradesh', 780],
+['IN-PB', 'Maharashtra', 640],
+['IN-RJ', 'Uttar Pradesh', 780],
+['IN-SK', 'Maharashtra', 640],
+['IN-TN', 'Uttar Pradesh', 780],
+['IN-TS', 'Maharashtra', 640],
+['IN-TR', 'Uttar Pradesh', 780],
+['IN-UP', 'Maharashtra', 640],
+['IN-UK', 'Maharashtra', 640],
+['IN-WB', 'Maharashtra', 640],
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+        </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            /* background-color: #bcf3b9; */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main">
+        <div class="container">
+            <div id="visualization">
+            </div>
+        </div>
+        <script>
+            google.load('visualization', '1.0', { 'packages': ['geochart'] });
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['State Code', 'State', 'AQI PM2.5'],
+                    ['IN-AN', 'Andaman and Nicobar Islands', 780],
+                    ['IN-AP', 'Andhra Pradesh', 640],
+                    ['IN-AR', 'Arunachal Pradesh', 780],
+                    ['IN-AS', 'Assam', 640],
+                    ['IN-BR', 'Bihar', 780],
+                    ['IN-CH', 'Chandigarh', 640],
+                    ['IN-CT', 'Chattisgarh', 780],
+                    ['IN-DH', 'Dadra-Nagar Haveli', 640],
+                    ['IN-DL', 'Delhi', 780],
+                    ['IN-GA', 'Goa', 640],
+                    ['IN-GJ', 'Gujarat', 780],
+                    ['IN-HR', 'Haryana', 640],
+                    ['IN-HP', 'Himachal Pradesh', 780],
+                    ['IN-JK', 'Jammu and Kashmir', 640],
+                    ['IN-JH', 'Jharkhand', 780],
+                    ['IN-KA', 'Karnataka', 640],
+                    ['IN-KL', 'Kerala', 780],
+                    ['IN-LA', 'Ladakh', 640],
+                    ['IN-LD', 'Lakshadweep', 780],
+                    ['IN-MP', 'Madhya Pradesh', 640],
+                    ['IN-MH', 'Maharashtra', 780],
+                    ['IN-MN', 'Manipur', 640],
+                    ['IN-ML', 'Meghalaya', 780],
+                    ['IN-MZ', 'Mizoram', 640],
+                    ['IN-NL', 'Nagaland', 780],
+                    ['IN-OR', 'Odisha', 640],
+                    ['IN-PY', 'Puducherry', 780],
+                    ['IN-PB', 'Punjab', 640],
+                    ['IN-RJ', 'Rajasthan', 780],
+                    ['IN-SK', 'Sikkim', 640],
+                    ['IN-TN', 'Tamil Nadu', 780],
+                    ['IN-TG', 'Telangana', 640],
+                    ['IN-TR', 'Tripura', 780],
+                    ['IN-UP', 'Uttar Pradesh', 640],
+                    ['IN-UT', 'Uttarakhand', 640],
+                    ['IN-WB', 'West Bengal', 640],
+                ]);
+
+                var opts = {
+                    region: 'IN',
+                    domain: 'IN',
+                    displayMode: 'regions',
+                    colorAxis: { colors: ['#bcf3b9', '#9cfd97', '#37b830'] },
+                    resolution: 'provinces',
+                    backgroundColor: '#ffffff',
+                    defaultColor: '#f5f5f5',
+                    datalessRegionColor: '#ffffff',
+                    width: 940,
+                    height: 680,
+                    mapType: 'hybrid',
+                    enableRegionInteractivity: true,
+                };
+
+                var geochart = new google.visualization.GeoChart(
+                    document.getElementById('visualization')
+                );
+                geochart.draw(data, opts);
+            };
+        </script>
+    </main>
+</body>
+
+</html>
+----------------------------------xxxxxx-------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            /* background-color: #bcf3b9; */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main">
+        <div class="container">
+            <div>
+                <label for="yearSelect">Select Year:</label>
+                <select id="yearSelect" onchange="drawChart()">
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                </select>
+            </div>
+            <div id="visualization">
+            </div>
+        </div>
+        <script>
+            google.load('visualization', '1.0', { 'packages': ['geochart'] });
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                // var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1B4HHojPNTlwdq8Ir_if6WhIUszhjB8wU88I7oVJovQI/gviz/tq?sheet=Sheet1');
+                var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PpvzJq1m1ew1kP9--eAi2_kO-DzVuxDN6jnHDJ008wQ/gviz/tq?sheet=Sheet4');
+
+                query.send(function (response) {
+                    if (response.isError()) {
+                        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+                        return;
+                    }
+                    var data = response.getDataTable();
+
+                    var options = {
+                        region: 'IN',
+                        domain: 'IN',
+                        displayMode: 'regions',
+                        colorAxis: { colors: ['#bcf3b9', '#9cfd97', '#37b830'] },
+                        resolution: 'provinces',
+                        backgroundColor: '#ffffff',
+                        defaultColor: '#f5f5f5',
+                        datalessRegionColor: '#ffffff',
+                        width: 940,
+                        height: 680,
+                        mapType: 'hybrid',
+                        enableRegionInteractivity: true,
+                    };
+
+                    var chart = new google.visualization.GeoChart(document.getElementById('visualization'));
+                    chart.draw(data, options);
+                });
+            }
+        </script>
+    </main>
+</body>
+
+</html>
+
+
+
