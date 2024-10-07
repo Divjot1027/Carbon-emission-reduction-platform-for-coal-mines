@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Maharashtra" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.7758, 18.5204],
+            [73.8567, 18.5204],
+            [74.4436, 19.075984],
+            [73.8372, 19.7515],
+            [72.7758, 18.5204]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Madhya Pradesh" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.6047, 22.7196],
+            [75.7873, 23.2599],
+            [78.4867, 23.2599],
+            [80.817, 22.9676],
+            [74.6047, 22.7196]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "West Bengal" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.324, 22.5726],
+            [88.3639, 22.5726],
+            [88.6122, 24.505],
+            [87.855, 24.5017],
+            [85.324, 22.5726]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Tamil Nadu" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.6569, 10.7905],
+            [79.7833, 10.7905],
+            [80.9454, 12.9716],
+            [78.2375, 12.9722],
+            [78.6569, 10.7905]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Rajasthan" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.5714, 26.9124],
+            [74.3587, 26.9124],
+            [75.8505, 27.023],
+            [74.0047, 24.5845],
+            [72.5714, 26.9124]
+          ]
+        ]
+      }
+    }
+  ]
+}

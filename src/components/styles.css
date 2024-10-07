@@ -1,0 +1,5 @@
+.mapbox path:hover{
+  fill: #385b3d;
+  transition: 0.3s;
+  cursor: pointer;
+}
